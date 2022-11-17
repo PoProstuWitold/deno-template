@@ -18,14 +18,15 @@ jobs:
                 deno:
                     [1.x, "1.8.2", canary, ~1.7, e7b7129b7a92b7500ded88f8f5baa25a7f59e56e]
         steps:
-            - name: Actions Setup
-              uses: actions/checkout@v2
-            - name: Use Deno
+            - uses: actions/checkout@v2
+            - name: Setup Deno
               uses: ./
               with:
-                  deno-version: ${{ matrix.deno }}
+                deno-version: ${{ matrix.deno }}
+
             - name: Test Deno
               run: deno run https://deno.land/std/examples/welcome.ts
+
             - name: Test `deno install`
               run: |
                 deno install --allow-net -n deno_curl https://deno.land/std/examples/curl.ts
