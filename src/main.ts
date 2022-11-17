@@ -35,7 +35,5 @@ export const myPets: Pet[] = [
 export const getPetByKind = (petKind: PetKind, pets: Pet[]): Pet[] => {
 	const matchingPets: Pet[] = pets.filter((pet) => pet.kind === petKind)
 
-	console.log()
-
 	return matchingPets
 }
