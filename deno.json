@@ -1,0 +1,45 @@
+{
+    "title": "Deno Project Template",
+    "description": "Example project written in Deno",
+    "compilerOptions": {
+        "types": [
+            "./src/types.ts"
+        ],
+        "allowJs": true,
+        "lib": [
+            "deno.window"
+        ],
+        "strict": true
+    },
+    "importMap": "import_map.json",
+    "lint": {
+        "files": {
+            "include": ["src/"],
+            "exclude": ["__test__/"]
+        },
+        "rules": {
+            "tags": ["recommended"],
+            "include": ["ban-untagged-todo"],
+            "exclude": ["no-unused-vars"]
+        }
+    },
+    "fmt": {
+        "files": {
+            "include": ["src/"],
+            "exclude": ["__test__/"]
+        },
+        "options": {
+            "useTabs": true,
+            "lineWidth": 80,
+            "indentWidth": 4,
+            "singleQuote": true,
+            "proseWrap": "preserve"
+        }
+    },
+    "test": {
+        "files": {
+            "include": ["__test__/"],
+            "exclude": ["src/"]
+        }
+    }
+}
