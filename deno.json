@@ -15,7 +15,7 @@
     "lint": {
         "files": {
             "include": ["src/"],
-            "exclude": ["__test__/"]
+            "exclude": ["__tests__/"]
         },
         "rules": {
             "tags": ["recommended"],
@@ -26,7 +26,7 @@
     "fmt": {
         "files": {
             "include": ["src/"],
-            "exclude": ["__test__/"]
+            "exclude": ["__tests__/"]
         },
         "options": {
             "useTabs": true,
@@ -38,7 +38,7 @@
     },
     "test": {
         "files": {
-            "include": ["__test__/"],
+            "include": ["__tests__/"],
             "exclude": ["src/"]
         }
     }
