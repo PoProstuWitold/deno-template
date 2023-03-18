@@ -2,8 +2,8 @@
     "imports": {
         "/": "./",
         "./": "./",
-        "fmt/": "https://deno.land/std@0.164.0/fmt/",
-        "testing/": "https://deno.land/std@0.164.0/testing/",
-        "config": "https://deno.land/std@0.164.0/dotenv/mod.ts"
+        "fmt/": "https://deno.land/std@0.180.0/fmt/",
+        "testing/": "https://deno.land/std@0.180.0/testing/",
+        "config": "https://deno.land/std@0.180.0/dotenv/mod.ts"
     }
 }

@@ -1,10 +1,10 @@
-import { config } from 'config'
+import { load } from 'config'
 import { green } from 'fmt/colors.ts'
 
 import { Pet, PetKind, PetStatus } from './types.ts'
 
 
-const configData = await config()
+const configData = await load()
 
 console.log(green(`My favorite dog is ${configData['dog']}`));
 
